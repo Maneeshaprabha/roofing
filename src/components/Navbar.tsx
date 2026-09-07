@@ -33,11 +33,11 @@ export default function Navbar() {
         
         {/* Desktop Links (Hidden on mobile) */}
         <div className="hidden md:flex gap-14 font-medium text-[15px] tracking-wide">
-          <a href="#" className="text-white">Home</a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">Service</a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">Blogs</a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">Blogs</a>
+          <a href="./" className="text-white">Home</a>
+          <a href="services" className="text-gray-400 hover:text-white transition-colors">Service</a>
+          <a href="careers" className="text-gray-400 hover:text-white transition-colors">Careers</a>
+          <a href="blogs" className="text-gray-400 hover:text-white transition-colors">Blogs</a>
+          <a href="blogs" className="text-gray-400 hover:text-white transition-colors">Blogs</a>
         </div>
         
         {/* Menu Icon (Works as toggle on mobile) */}
