@@ -16,7 +16,6 @@ export default function ServiceDetailsPage() {
   return (
     // 'overflow-hidden' wenuwata 'overflow-x-clip' damma sticky wada karanna
     <div className="min-h-screen bg-white text-zinc-900 font-sans overflow-x-clip">
-      <Navbar />
 
       {/* 1. HERO SECTION */}
       <section className="relative bg-[#050505] pt-40 pb-24 md:pt-52 md:pb-32 px-6 md:px-16 lg:px-24 rounded-b-[40px] md:rounded-b-[60px] overflow-hidden">

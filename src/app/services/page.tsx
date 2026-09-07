@@ -57,7 +57,7 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen bg-white text-zinc-900 font-sans overflow-hidden">
-      <Navbar />
+     
 
       {/* 1. HERO SECTION */}
       <section className="relative bg-[#050505] pt-40 pb-24 md:pt-52 md:pb-32 px-6 md:px-16 lg:px-24 overflow-hidden rounded-b-[40px] md:rounded-b-[60px]">
@@ -182,7 +182,7 @@ export default function ServicesPage() {
       </section>
 
       <CTASection />
-      <Footer />
+   
     </div>
   );
 }

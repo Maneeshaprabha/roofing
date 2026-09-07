@@ -105,8 +105,7 @@ export default function ServiceDetailsPage() {
 
   return (
     <div className="min-h-screen bg-white text-zinc-900 font-sans overflow-x-clip">
-      <Navbar />
-
+     
       {/* 1. HERO SECTION */}
       <section className="relative bg-[#050505] pt-40 pb-24 md:pt-52 md:pb-32 px-6 md:px-16 lg:px-24 rounded-b-[40px] md:rounded-b-[60px] overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-white blur-[150px] opacity-[0.02] rounded-full pointer-events-none"></div>
