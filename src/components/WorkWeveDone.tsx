@@ -16,63 +16,51 @@ export default function WorkWeveDone() {
     visible: { opacity: 1, transition: { staggerChildren: 0.15  } }
   };
 
-  
-//   const projects = Array(6).fill({
-//     date: "October 12, 2025",
-//     category: "Engineering",
-//     title: "Welimada Sathosa",
-//     desc: "Custom metal fabrication work completed with precision and durability.",
-//     // Placeholder image matching a similar house vibe
-//     img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800" 
-//   });
-
-   
-    // Sample Projects Data
-    const projects = [
-      {
-        date: "October 12, 2025",
-        category: "Engineering",
-        title: "Residential Roofing Project",
-        img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=600",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.",
-      },
-      {
-        date: "October 12, 2025",
-        category: "Engineering",
-        title: "Commercial Steel Structure",
-        img: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=600",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.",    
-      },
-      {
-        date: "October 12, 2025",
-        category: "Engineering",
-        title: "Rainwater Harvesting System",
-        img: "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=600",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.",   
-
-      },
-        {
-        date: "October 12, 2025",
-        category: "Engineering",
-        title: "Maintenance & Repair",
-        img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.",
-      },
-      {
-        date: "October 12, 2025",
-        category: "Engineering",
-        title: "Structural Steel Framework",
-        img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=600", 
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.",
-      },
-      {
-        date: "October 12, 2025",
-        category: "Engineering",
-        title: "Custom Metal Fabrication",
-        img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=600",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.",
-      }
-    ];
+  // Real-world, professional content for Vinta Engineering
+  const projects = [
+    {
+      date: "August 15, 2025",
+      category: "Structural",
+      title: "Cypso Industrial Warehouse",
+      img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=600",
+      desc: "Engineered and installed a heavy-duty structural steel framework, ensuring maximum load-bearing capacity and architectural stability.",
+    },
+    {
+      date: "September 22, 2025",
+      category: "Roofing",
+      title: "Horizon Residential Villas",
+      img: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=600",
+      desc: "Completed a comprehensive roof installation using premium zinc-aluminum sheets, delivering enhanced weather resistance and thermal efficiency.",    
+    },
+    {
+      date: "November 05, 2025",
+      category: "Rainwater Systems",
+      title: "Eco-Tech Industrial Park",
+      img: "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=600",
+      desc: "Designed and deployed a large-scale industrial rainwater harvesting and guttering system to efficiently manage heavy seasonal monsoons.",   
+    },
+    {
+      date: "January 18, 2026",
+      category: "Maintenance",
+      title: "Badulla Heritage Renovation",
+      img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600",
+      desc: "Executed critical roof restorations and structural reinforcements to extend the lifespan and safety of a historic commercial property.",
+    },
+    {
+      date: "March 30, 2026",
+      category: "Fabrication",
+      title: "Nexus Logistics Hub",
+      img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=600", 
+      desc: "Fabricated and assembled custom steel purlins and cladding systems tailored to the exact structural requirements of the facility.",
+    },
+    {
+      date: "May 12, 2026",
+      category: "Custom Architecture",
+      title: "Alpine Retreat Residences",
+      img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600",
+      desc: "Delivered high-end roofing and custom metal finishing, seamlessly blending robust engineering with modern aesthetic design.",
+    }
+  ];
 
   return (
     <section className="py-24 px-6 md:px-16 lg:px-24 max-w-[1400px] mx-auto font-sans">
