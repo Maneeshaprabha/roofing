@@ -22,6 +22,7 @@ export default function ProductsPage() {
     {
       id: 1,
       title: "Zinc-Aluminium Roofing Sheets",
+      slug: "zinc-aluminium-roofing-sheets",
       category: "Roofing Sheets",
       desc: "High-grade alloy coated steel sheets providing superior corrosion resistance and long-lasting durability for modern roofs.",
       specs: "Thickness: 0.40mm - 0.50mm | Length: Custom",
@@ -30,6 +31,7 @@ export default function ProductsPage() {
     {
       id: 2,
       title: "Stone-Coated Steel Tiles",
+        slug: "stone-coated-steel-tiles",
       category: "Roofing Sheets",
       desc: "Combines the strength of steel with the natural aesthetic beauty of stone chips. Excellent sound and heat insulation.",
       specs: "Weight: Super lightweight | Warranty: 25 Years",
@@ -38,6 +40,7 @@ export default function ProductsPage() {
     {
       id: 3,
       title: "Heavy-Duty Steel I-Beams",
+      slug: "heavy-duty-steel-i-beams",
       category: "Structural Steel",
       desc: "Hot-rolled structural steel beams engineered to support massive load-bearing requirements in commercial and industrial construction.",
       spec: "Grade: ASTM A36 / SS400",
@@ -46,6 +49,7 @@ export default function ProductsPage() {
     {
       id: 4,
       title: "Seamless Aluminium Gutters",
+        slug: "seamless-aluminium-gutters",
       category: "Rainwater Systems",
       desc: "Custom-formed seamless gutter systems designed to handle heavy tropical downpours without leaking or sagging.",
       specs: "Material: Heavy gauge aluminum",
@@ -54,6 +58,7 @@ export default function ProductsPage() {
     {
       id: 5,
       title: "Square Downpipe Networks",
+        slug: "square-downpipe-networks",
       category: "Rainwater Systems",
       desc: "Architecturally sleek square downpipes engineered for high-capacity drainage and secure wall mounting.",
       specs: "Finish: Powder coated matte black",
@@ -62,7 +67,9 @@ export default function ProductsPage() {
     {
       id: 6,
       title: "C-Purlins & Z-Purlins",
+      slug: "c-purlins-z-purlins",
       category: "Structural Steel",
+      
       desc: "Cold-formed steel purlins offering exceptional structural support for roof and wall cladding systems.",
       specs: "Coating: Galvanized anti-rust",
       img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000"
@@ -70,6 +77,7 @@ export default function ProductsPage() {
     {
       id: 7,
       title: "Polycarbonate Skylight Sheets",
+        slug: "polycarbonate-skylight-sheets",
       category: "Accessories",
       desc: "High-transparency corrugated polycarbonate panels allowing natural daylight into industrial warehouses while blocking UV rays.",
       specs: "Light Transmission: Up to 90%",
@@ -78,6 +86,7 @@ export default function ProductsPage() {
     {
       id: 8,
       title: "Roof Waterproofing Sealants & Fasteners",
+        slug: "roof-waterproofing-sealants-fasteners",
       category: "Accessories",
       desc: "Professional-grade self-drilling screws with EPDM washers and high-elasticity waterproof sealants for leak-free joints.",
       specs: "Durability: Weatherproof seal",
@@ -189,9 +198,9 @@ export default function ProductsPage() {
                     <span className="text-[12px] text-zinc-500 font-medium tracking-wide">
                       {product.specs}
                     </span>
-                    <div className="w-10 h-10 rounded-full border border-zinc-300 flex items-center justify-center group-hover:bg-[#1a1a1a] group-hover:border-[#1a1a1a] transition-all duration-300">
+                    <Link href={`/products/${product.slug}`} className="w-10 h-10 rounded-full border border-zinc-300 flex items-center justify-center group-hover:bg-[#1a1a1a] group-hover:border-[#1a1a1a] transition-all duration-300">
                       <CornerDownRight size={16} className="text-[#1a1a1a] group-hover:text-white transition-colors" />
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
