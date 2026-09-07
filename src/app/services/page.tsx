@@ -16,27 +16,31 @@ export default function ServicesPage() {
   const servicesData = [
     {
       id: "01",
+      slug: "roofing-solutions", // Link path eka
       title: "Roofing Solutions",
       desc: "High-quality roofing services using durable zinc-aluminum and stone-coated steel. We ensure long-lasting protection, structural safety, and resistance to harsh weather conditions for effortless everyday living.",
       features: ["LEAK-PROOF INSTALLATION", "THERMAL EFFICIENCY", "20-YEAR WARRANTY"],
-      img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200"
+      img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=1200"
     },
     {
       id: "02",
+      slug: "structural-steel",
       title: "Structural Steel Design",
       desc: "We design thoughtful commercial and residential structural spaces that align with your safety goals. Expert fabrication and installation of steel frameworks ensuring maximum load-bearing capacity.",
       features: ["HEAVY-DUTY FRAMEWORKS", "CUSTOM FABRICATION", "SEISMIC RESISTANCE"],
-      img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200"
+      img: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=1200"
     },
     {
       id: "03",
+      slug: "rainwater-harvesting",
       title: "Rainwater Harvesting",
       desc: "Advanced guttering and rainwater harvesting system installations designed to efficiently manage heavy rainfall and protect your property while promoting eco-friendly water management.",
       features: ["SEAMLESS GUTTERS", "HIGH-CAPACITY DRAINAGE", "ECO-FRIENDLY SYSTEM"],
-      img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200"
+      img: "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=1200"
     },
     {
       id: "04",
+      slug: "maintenance-repair",
       title: "Maintenance & Repair",
       desc: "Comprehensive roof inspection, maintenance, and emergency repair services to extend the lifespan of your engineering products and ensure continuous safety.",
       features: ["24/7 EMERGENCY SUPPORT", "DETAILED INSPECTIONS", "MATERIAL REPLACEMENTS"],
@@ -75,10 +79,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* 2. SERVICES LIST SECTION (Rounded Theme) */}
+      {/* 2. SERVICES LIST SECTION */}
       <section className="py-20 md:py-32 px-6 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
-        
-        {/* Main Title Area */}
         <motion.div 
           initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
           className="pb-6 md:pb-10 border-b border-zinc-200 mb-12"
@@ -88,9 +90,8 @@ export default function ServicesPage() {
           </h2>
         </motion.div>
 
-        {/* Services Stack */}
         <div className="flex flex-col">
-          {servicesData.map((service, index) => (
+          {servicesData.map((service) => (
             <motion.div 
               key={service.id} 
               initial={{ opacity: 0, y: 30 }}
@@ -99,7 +100,6 @@ export default function ServicesPage() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="flex flex-col lg:flex-row gap-12 lg:gap-20 py-16 md:py-20 border-b border-zinc-200 items-center lg:items-stretch"
             >
-              
               {/* Left Column: Text & Content */}
               <div className="w-full lg:w-[45%] flex flex-col justify-center">
                 <h3 className="text-[36px] md:text-[44px] font-medium text-[#1a1a1a] mb-6 tracking-tight leading-[1.1]">
@@ -109,7 +109,6 @@ export default function ServicesPage() {
                   {service.desc}
                 </p>
                 
-                {/* Gray Background Tags - Now Rounded */}
                 <div className="flex flex-wrap gap-2 md:gap-3 mb-10">
                   {service.features.map((feature, i) => (
                     <span 
@@ -121,8 +120,11 @@ export default function ServicesPage() {
                   ))}
                 </div>
 
-                {/* Outline Button - Now Rounded Pill Shape */}
-                <Link href="#" className="flex items-center gap-3 border border-[#1a1a1a] rounded-full text-[#1a1a1a] px-7 py-3.5 w-max hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300">
+                {/* Dynamic Link to Individual Service Page */}
+                <Link 
+                  href={`/services/${service.slug}`} 
+                  className="flex items-center gap-3 border border-[#1a1a1a] rounded-full text-[#1a1a1a] px-7 py-3.5 w-max hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300"
+                >
                   <CornerDownRight size={18} strokeWidth={1.5} />
                   <span className="text-[12px] md:text-[13px] font-semibold tracking-[0.15em] uppercase mt-0.5">
                     Learn More
@@ -140,7 +142,6 @@ export default function ServicesPage() {
                   />
                 </div>
               </div>
-
             </motion.div>
           ))}
         </div>
@@ -181,7 +182,7 @@ export default function ServicesPage() {
       </section>
 
       <CTASection />
-     
+      <Footer />
     </div>
   );
 }
