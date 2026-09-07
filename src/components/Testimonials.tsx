@@ -52,8 +52,9 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-24 px-6 md:px-16 lg:px-24 max-w-[1400px] mx-auto font-sans">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
+    // Reduced padding on mobile (py-16 px-4) and normal on desktop
+    <section className="py-16 md:py-24 px-5 md:px-16 lg:px-24 max-w-[1400px] mx-auto font-sans">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 lg:gap-20 items-stretch">
         
         {/* LEFT COLUMN: Text & Stats */}
         <motion.div
@@ -63,12 +64,13 @@ export default function Testimonials() {
           variants={fadeUp}
           className="flex flex-col justify-center"
         >
-          <div className="flex items-center gap-1 mb-6">
+          <div className="flex items-center gap-1 mb-4 md:mb-6">
             <ChevronUp size={20} strokeWidth={2.5} className="text-[#cc3333]" />
-            <p className="font-medium text-[15px] text-gray-600">Testimonials</p>
+            <p className="font-medium text-[14px] md:text-[15px] text-gray-600">Testimonials</p>
           </div>
           
-          <h2 className="text-[36px] md:text-[46px] font-medium leading-[1.2] text-[#1a1a1a] mb-12 tracking-tight">
+          {/* Responsive Heading */}
+          <h2 className="text-[32px] md:text-[46px] font-medium leading-[1.2] text-[#1a1a1a] mb-8 md:mb-12 tracking-tight">
             Hear what our clients say <br className="hidden md:block"/> 
             about our reliable <br className="hidden md:block"/> 
             engineering services, quality <br className="hidden md:block"/> 
@@ -76,34 +78,35 @@ export default function Testimonials() {
             project delivery.
           </h2>
           
-          {/* Original Side-by-Side Red Stats Boxes */}
-          <div className="flex w-full md:max-w-xl">
-            <div className="flex-1 bg-[#cc3333] p-8 md:p-10 flex flex-col justify-center">
-              <h3 className="text-white text-5xl md:text-6xl font-normal mb-2 tracking-tight">500+</h3>
-              <p className="text-white/90 text-sm md:text-[15px] font-medium">Projects Completed</p>
+          {/* Stats Boxes (Stacks on mobile, side-by-side on larger screens) */}
+          <div className="flex flex-col sm:flex-row w-full md:max-w-xl">
+            <div className="flex-1 bg-[#cc3333] p-6 md:p-10 flex flex-col justify-center">
+              <h3 className="text-white text-4xl md:text-5xl lg:text-6xl font-normal mb-1 md:mb-2 tracking-tight">500+</h3>
+              <p className="text-white/90 text-[13px] md:text-[15px] font-medium">Projects Completed</p>
             </div>
-            <div className="flex-1 bg-[#b82d29] p-8 md:p-10 flex flex-col justify-center">
-              <h3 className="text-white text-5xl md:text-6xl font-normal mb-2 tracking-tight">98%</h3>
-              <p className="text-white/90 text-sm md:text-[15px] font-medium">Client Satisfaction</p>
+            <div className="flex-1 bg-[#b82d29] p-6 md:p-10 flex flex-col justify-center">
+              <h3 className="text-white text-4xl md:text-5xl lg:text-6xl font-normal mb-1 md:mb-2 tracking-tight">98%</h3>
+              <p className="text-white/90 text-[13px] md:text-[15px] font-medium">Client Satisfaction</p>
             </div>
           </div>
         </motion.div>
 
-        {/* RIGHT COLUMN: Original Layout Preserved (Card + Dark Avatar Pill on Right) */}
+        {/* RIGHT COLUMN: Responsive Layout (Card + Avatar Pill) */}
+        {/* flex-col-reverse on mobile puts the pill at the bottom. flex-row on md+ puts it on the right. */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUp}
           transition={{ delay: 0.2 }}
-          className="flex gap-4 md:gap-6 h-full min-h-[400px]"
+          className="flex flex-col-reverse md:flex-row gap-4 md:gap-6 h-full min-h-[350px] md:min-h-[400px]"
         >
           {/* Main Light Gray Review Card */}
-          <div className="flex-1 bg-[#e8e9eb] rounded-[32px] p-8 md:p-12 flex flex-col overflow-hidden">
+          <div className="flex-1 bg-[#e8e9eb] rounded-[24px] md:rounded-[32px] p-6 md:p-12 flex flex-col overflow-hidden">
             
-            <div className="flex gap-1.5 mb-8">
+            <div className="flex gap-1.5 mb-6 md:mb-8">
               {[1, 2, 3, 4, 5].map((star) => (
-                <Star key={star} size={24} className="fill-[#cc3333] text-[#cc3333]" />
+                <Star key={star} size={20} className="fill-[#cc3333] text-[#cc3333] md:w-6 md:h-6" />
               ))}
             </div>
 
@@ -116,15 +119,15 @@ export default function Testimonials() {
                 transition={{ duration: 0.3, ease: "easeOut" }}
                 className="flex flex-col flex-1"
               >
-                <p className="text-[20px] md:text-[22px] text-[#1a1a1a] leading-[1.6] font-medium max-w-[95%]">
+                <p className="text-[18px] md:text-[22px] text-[#1a1a1a] leading-[1.5] md:leading-[1.6] font-medium md:max-w-[95%]">
                   {testimonialsData[activeIndex].review}
                 </p>
 
-                <div className="mt-auto pt-8 flex flex-col items-end text-right">
-                  <h4 className="text-[17px] font-medium text-[#1a1a1a]">
+                <div className="mt-auto pt-6 md:pt-8 flex flex-col items-end text-right">
+                  <h4 className="text-[16px] md:text-[17px] font-medium text-[#1a1a1a]">
                     {testimonialsData[activeIndex].name}
                   </h4>
-                  <p className="text-[15px] text-gray-500">
+                  <p className="text-[14px] md:text-[15px] text-gray-500">
                     {testimonialsData[activeIndex].role}
                   </p>
                 </div>
@@ -133,14 +136,15 @@ export default function Testimonials() {
             
           </div>
 
-          {/* Dark Avatar Selector Pill (Always on the right side) */}
-          <div className="bg-[#1a1a1a] rounded-[40px] p-3 md:p-4 flex flex-col items-center justify-between gap-3 shadow-2xl shrink-0">
+          {/* Avatar Selector Pill */}
+          {/* flex-row on mobile (horizontal scrollable), flex-col on desktop (vertical) */}
+          <div className="bg-[#1a1a1a] rounded-full md:rounded-[40px] p-2 md:p-4 flex flex-row md:flex-col items-center justify-start md:justify-between gap-3 md:gap-3 shadow-2xl shrink-0 overflow-x-auto w-full md:w-auto custom-scrollbar">
             {testimonialsData.map((testimonial, idx) => (
               <div 
                 key={testimonial.id}
                 onClick={() => setActiveIndex(idx)}
-                className={`relative w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden cursor-pointer transition-all duration-300 border-2 ${
-                  activeIndex === idx ? "border-white scale-110" : "border-transparent opacity-60 hover:opacity-100"
+                className={`relative w-12 h-12 md:w-16 md:h-16 shrink-0 rounded-full overflow-hidden cursor-pointer transition-all duration-300 border-2 ${
+                  activeIndex === idx ? "border-white scale-105 md:scale-110" : "border-transparent opacity-60 hover:opacity-100"
                 }`}
               >
                 <Image 

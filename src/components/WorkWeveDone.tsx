@@ -16,15 +16,63 @@ export default function WorkWeveDone() {
     visible: { opacity: 1, transition: { staggerChildren: 0.15  } }
   };
 
-  // Dummy data for the 6 cards exactly matching the design
-  const projects = Array(6).fill({
-    date: "October 12, 2025",
-    category: "Engineering",
-    title: "Welimada Sathosa",
-    desc: "Custom metal fabrication work completed with precision and durability.",
-    // Placeholder image matching a similar house vibe
-    img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800" 
-  });
+  
+//   const projects = Array(6).fill({
+//     date: "October 12, 2025",
+//     category: "Engineering",
+//     title: "Welimada Sathosa",
+//     desc: "Custom metal fabrication work completed with precision and durability.",
+//     // Placeholder image matching a similar house vibe
+//     img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800" 
+//   });
+
+   
+    // Sample Projects Data
+    const projects = [
+      {
+        date: "October 12, 2025",
+        category: "Engineering",
+        title: "Residential Roofing Project",
+        img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=600",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.",
+      },
+      {
+        date: "October 12, 2025",
+        category: "Engineering",
+        title: "Commercial Steel Structure",
+        img: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=600",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.",    
+      },
+      {
+        date: "October 12, 2025",
+        category: "Engineering",
+        title: "Rainwater Harvesting System",
+        img: "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=600",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.",   
+
+      },
+        {
+        date: "October 12, 2025",
+        category: "Engineering",
+        title: "Maintenance & Repair",
+        img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.",
+      },
+      {
+        date: "October 12, 2025",
+        category: "Engineering",
+        title: "Structural Steel Framework",
+        img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=600", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.",
+      },
+      {
+        date: "October 12, 2025",
+        category: "Engineering",
+        title: "Custom Metal Fabrication",
+        img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=600",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.",
+      }
+    ];
 
   return (
     <section className="py-24 px-6 md:px-16 lg:px-24 max-w-[1400px] mx-auto font-sans">

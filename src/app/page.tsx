@@ -4,6 +4,8 @@
 
 
 import BlueprintSection from "../components/BlueprintSection";
+import CTASection from "../components/CTASection";
+import FAQ from "../components/FAQ";
 import Hero from "../components/Hero";
 import InspirationSection from "../components/InspirationSection";
 
@@ -30,6 +32,8 @@ export default function VintaHomepage() {
         <InspirationSection/>
         <WorkingTogether/>
         <Testimonials/>
+        <FAQ/>
+        <CTASection/>
         
       </main>
   
