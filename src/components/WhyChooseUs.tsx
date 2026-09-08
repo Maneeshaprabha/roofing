@@ -132,7 +132,7 @@ export default function WhyChooseUs() {
             
             {/* Text Side (Left half) */}
             <div className="relative z-10 w-full md:w-3/5">
-              <h3 className="text-4xl lg:text-[42px] font-semibold text-[#1a1a1a] mb-2 tracking-tight">Roofing Tiles</h3>
+              <h3 className="text-4xl lg:text-[42px] font-semibold text-[#1a1a1a] mb-2 tracking-tight">Modern Home Exterior</h3>
               <p className="text-gray-500 text-[15px] font-medium">Weather-resistant and aesthetically pleasing.</p>
               {/* Thick Red Line */}
               <div className="h-[4px] w-40 bg-[#cc3333] mt-4"></div>
@@ -140,12 +140,12 @@ export default function WhyChooseUs() {
 
             {/* Stacked Tiles Image (Right half) */}
             <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[60%] h-[120%]">
-              <Image
-                src="https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=600" 
+              {/* <Image
+                src="https://plus.unsplash.com/premium_photo-1736194028960-1c65f630137d?q=80&w=687&auto=format&fit=crop"
                 alt="Stacked Tiles" 
                 fill 
                 className="object-contain mix-blend-multiply drop-shadow-xl hover:scale-105 transition-transform duration-500" 
-              />
+              /> */}
             </div>
           </div>
 
