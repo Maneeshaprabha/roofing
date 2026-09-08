@@ -116,7 +116,7 @@ const productsData = [
     subCategory: "Corrugated",
     desc: "Traditional wavy metal sheets perfect for industrial and agricultural buildings.",
     specs: "Gauge: 26 to 29",
-    img: "https://images.unsplash.com/photo-1550503610-86b3e6b79796?q=80&w=800",
+    img: "https://images.unsplash.com/photo-1620440713551-67b10bbe350d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=800",
   },
 
   // --- STRUCTURES ---
@@ -138,7 +138,7 @@ const productsData = [
     subCategory: "Purlins",
     desc: "Cold-formed steel purlins offering exceptional structural support for cladding.",
     specs: "Coating: Galvanized",
-    img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800",
+    img: "https://img.magnific.com/free-photo/close-up-metallic-pipes_23-2151113214.jpg?t=st=1788895073~exp=1788898673~hmac=bf0ad5581e6ec6f1f25724395ff3e1e0a6070dee9b3a8f3981a0fbe64af89bd4&w=2000=80&w=800",
   },
   {
     id: 10,
@@ -148,7 +148,7 @@ const productsData = [
     subCategory: "Purlins",
     desc: "Z-shaped purlins allowing overlaps for continuous spans in large warehouses.",
     specs: "Yield Strength: 450 MPa",
-    img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=800",
+    img: "https://img.magnific.com/free-photo/large-steel-factory-warehouse_1127-3285.jpg?t=st=1788894763~exp=1788898363~hmac=9eb8ab086bc8d34b23d7ca19e149461aa964d815291b1c178df44d2e70163d75&w=1480=80&w=800",
   },
   {
     id: 11,
@@ -180,7 +180,7 @@ const productsData = [
     subCategory: "Seamless Gutters",
     desc: "Custom-formed seamless gutter systems designed to handle heavy downpours.",
     specs: "Material: Heavy gauge aluminum",
-    img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800",
+    img: "https://img.magnific.com/free-photo/low-angle-shot-two-pipes-as-they-go-up-building-window_181624-16532.jpg?t=st=1788895613~exp=1788899213~hmac=8f8c76acdda3bedaf83f83ee7372dfe1aeb1c894d3a97cbb84fe3e251c2c8127&w=2000=80&w=800",
   },
   {
     id: 14,

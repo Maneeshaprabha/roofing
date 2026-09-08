@@ -20,7 +20,7 @@ export default function Products() {
 
     // Page 2 (6 to 11)
     { id: 7, title: "Heavy-Duty I-Beams", desc: "Hot-rolled structural steel for massive load bearing.", img: "https://images.unsplash.com/photo-1671022442106-c787685d9fed?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dq=80&w=600" },
-    { id: 8, title: "Galvanized C-Purlins", desc: "Cold-formed steel purlins for roof frameworks.", img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600" },
+    { id: 8, title: "Galvanized C-Purlins", desc: "Cold-formed steel purlins for roof frameworks.", img: "https://img.magnific.com/free-photo/close-up-metallic-pipes_23-2151113214.jpg?t=st=1788895073~exp=1788898673~hmac=bf0ad5581e6ec6f1f25724395ff3e1e0a6070dee9b3a8f3981a0fbe64af89bd4&w=2000=80&w=800" },
     { id: 9, title: "Seamless Gutters", desc: "Custom-formed aluminium systems for heavy downpours.", img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600" },
     { id: 10, title: "Acoustic Wood Panels", desc: "Premium interior wooden slats for sound absorption.", img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=600" },
     { id: 11, title: "Exterior Steel Cladding", desc: "Durable and weather-resistant wall systems.", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600" },

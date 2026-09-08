@@ -122,7 +122,7 @@ const productsContent: Record<string, {
     title: "C-Purlins & Z-Purlins",
     category: "Structural Steel",
     heroDesc: "Cold-formed steel purlins offering exceptional structural support for roof and wall cladding systems.",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000",
+    image: "https://img.magnific.com/free-photo/large-steel-factory-warehouse_1127-3285.jpg?t=st=1788894763~exp=1788898363~hmac=9eb8ab086bc8d34b23d7ca19e149461aa964d815291b1c178df44d2e70163d75&w=2000=80&w=1000",
     overview: "Cold-formed C and Z purlins act as secondary structural members supporting roof sheets and wall claddings. Fabricated from high-tensile galvanized steel, they provide excellent rigidity and load span efficiency.",
     features: [
       "Pre-punched holes for fast, accurate bolt assembly.",
