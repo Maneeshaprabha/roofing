@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export default function CTASection() {
   return (
@@ -36,7 +37,7 @@ export default function CTASection() {
           </p>
 
           {/* Premium Pill Button with Hover Effect */}
-          <button className="flex items-center gap-4 bg-[#1a1a1a] hover:bg-[#2a2a2a] text-white p-2 pr-8 rounded-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group">
+          <Link href={"/contact"} className="flex items-center gap-4 bg-[#1a1a1a] hover:bg-[#2a2a2a] text-white p-2 pr-8 rounded-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group">
             {/* White Circle with Arrow */}
             <div className="bg-white text-[#1a1a1a] w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full group-hover:rotate-45 transition-transform duration-300">
               <ArrowUpRight size={24} strokeWidth={2.5} />
@@ -45,7 +46,7 @@ export default function CTASection() {
             <span className="text-[16px] md:text-[17px] font-medium tracking-wide">
               Get a Free Quote
             </span>
-          </button>
+          </Link>
         </motion.div>
 
       </div>

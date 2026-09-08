@@ -3,11 +3,42 @@
 import { motion } from "framer-motion";
 import { ChevronUp } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
+
+// Slider eke penwanne monawada kiyala data array ekak hadamu
+const slides = [
+  {
+    title: "Roofing Tiles",
+    subtitle: "Premium quality for maximum durability.",
+    img: "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=600"
+  },
+  {
+    title: "Steel Frameworks",
+    subtitle: "Heavy-duty structural steel solutions.",
+    img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600"
+  },
+  {
+    title: "Rainwater Gutters",
+    subtitle: "Seamless systems for extreme weather.",
+    img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600"
+  }
+];
 
 export default function WhyChooseUs() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut"  as const} },
+  };
+
+  // Mouse/Touch drag karama slide wenna ooni paththa calculate karana function eka
+  const handleDragEnd = (e: any, { offset }: any) => {
+    if (offset.x < -50 && currentIndex < slides.length - 1) {
+      setCurrentIndex((prev) => prev + 1); // Scroll Right
+    } else if (offset.x > 50 && currentIndex > 0) {
+      setCurrentIndex((prev) => prev - 1); // Scroll Left
+    }
   };
 
   return (
@@ -27,7 +58,7 @@ export default function WhyChooseUs() {
       {/* Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
         
-        {/* LEFT COLUMN: Tall Card */}
+        {/* LEFT COLUMN: Animated Carousel Card */}
         <motion.div 
           initial="hidden" 
           whileInView="visible" 
@@ -36,35 +67,59 @@ export default function WhyChooseUs() {
           className="md:col-span-5 relative h-[550px] lg:h-[600px] w-full rounded-[32px] overflow-hidden bg-[#e8e9eb] group"
         >
           {/* Bottom Red Background */}
-          <div className="absolute bottom-0 left-0 w-full h-[40%] bg-[#c23631] transition-transform duration-500 group-hover:h-[45%]"></div>
+          <div className="absolute bottom-0 left-0 w-full h-[40%] bg-[#c23631] transition-transform duration-500 group-hover:h-[45%] pointer-events-none"></div>
           
-          <div className="relative z-10 flex flex-col h-full p-8 lg:p-10">
-            {/* Card Texts */}
-            <h3 className="text-4xl lg:text-[40px] font-semibold text-[#1a1a1a] mb-2 tracking-tight">Roofing Tiles</h3>
-            <p className="text-gray-500 text-[15px] font-medium">Premium quality for maximum durability.</p>
-            {/* Thin Red Line */}
-            <div className="h-[2px] w-20 bg-[#cc3333] mt-3"></div>
+          {/* Slider Container (Draggable & Animated) */}
+          <motion.div 
+            className="relative z-10 flex h-full cursor-grab active:cursor-grabbing"
+            animate={{ x: `-${currentIndex * 100}%` }}
+            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.2}
+            onDragEnd={handleDragEnd}
+          >
+            {slides.map((slide, idx) => (
+              <div key={idx} className="w-full h-full shrink-0 flex flex-col p-8 lg:p-10 pb-16">
+                {/* Card Texts */}
+                <h3 className="text-4xl lg:text-[40px] font-semibold text-[#1a1a1a] mb-2 tracking-tight">
+                  {slide.title}
+                </h3>
+                <p className="text-gray-500 text-[15px] font-medium">
+                  {slide.subtitle}
+                </p>
+                {/* Thin Red Line */}
+                <div className="h-[2px] w-20 bg-[#cc3333] mt-3"></div>
 
-            {/* Tile Image */}
-            <div className="flex-1 relative mt-8 flex items-center justify-center">
-              <Image 
-                src="https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=600" 
-                alt="Black Roofing Tile" 
-                fill 
-                className="object-contain mix-blend-multiply drop-shadow-2xl hover:scale-105 transition-transform duration-500" 
-              />
-            </div>
+                {/* Tile Image */}
+                <div className="flex-1 relative mt-8 flex items-center justify-center">
+                  <Image 
+                    src={slide.img} 
+                    alt={slide.title} 
+                    fill 
+                    className="object-contain mix-blend-multiply drop-shadow-2xl hover:scale-105 transition-transform duration-500 pointer-events-none" 
+                  />
+                </div>
+              </div>
+            ))}
+          </motion.div>
 
-            {/* Pagination Dots */}
-            <div className="flex justify-center gap-2 mt-auto pb-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-black"></div>
-              <div className="w-1.5 h-1.5 rounded-full bg-black/30"></div>
-              <div className="w-1.5 h-1.5 rounded-full bg-black/30"></div>
-            </div>
+          {/* Pagination Dots (Clickable) */}
+          <div className="absolute z-20 bottom-8 left-0 right-0 flex justify-center gap-2">
+            {slides.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  currentIndex === idx ? "w-6 bg-black" : "w-1.5 bg-black/30 hover:bg-black/60"
+                }`}
+                aria-label={`Go to slide ${idx + 1}`}
+              ></button>
+            ))}
           </div>
         </motion.div>
 
-        {/* RIGHT COLUMN: Wide Card + Paragraph */}
+        {/* RIGHT COLUMN: Wide Card + Paragraph (No changes here) */}
         <motion.div 
           initial="hidden" 
           whileInView="visible" 

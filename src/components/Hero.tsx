@@ -35,7 +35,7 @@ export default function Hero() {
           </p>
 
           {/* Custom "Work with me" Button exactly as you requested */}
-          <button className="group flex items-center gap-4 rounded-full bg-white/20 py-1.5 pl-1.5 pr-8 text-white backdrop-blur-md transition-all hover:bg-white/30">
+          <button onClick={() => { window.location.href = "/contact" }} className="group  cursor-pointer flex items-center gap-4 rounded-full bg-white/20 py-1.5 pl-1.5 pr-8 text-white backdrop-blur-md transition-all hover:bg-white/30">
             <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#111111] transition-transform group-hover:scale-105">
               <ArrowUpRight size={20} className="text-white" strokeWidth={2} />
             </div>

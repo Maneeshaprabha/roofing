@@ -1,8 +1,6 @@
 "use client";
 
 import CTASection from "@/src/components/CTASection";
-import Footer from "@/src/components/Footer";
-import Navbar from "@/src/components/Navbar";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, Share2, CornerDownRight } from "lucide-react";
 import Link from "next/link";
@@ -75,38 +73,46 @@ export default function BlogPostPage() {
   return (
     <div className="min-h-screen bg-white text-zinc-900 font-sans overflow-x-clip">
 
-
-      {/* 1. HERO SECTION (Minimalist Blog Header) */}
+      {/* 1. HERO SECTION (Consistent Left-Aligned Layout with Breadcrumbs) */}
       <section className="relative bg-[#050505] pt-40 pb-24 md:pt-52 md:pb-32 px-6 md:px-16 lg:px-24 rounded-b-[40px] md:rounded-b-[60px] overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-white blur-[150px] opacity-[0.02] rounded-full pointer-events-none"></div>
         
-        <div className="max-w-[1400px] mx-auto relative z-10 flex flex-col items-center text-center">
-          <motion.div initial="hidden" animate="visible" variants={fadeUp} className="max-w-4xl flex flex-col items-center">
+        <div className="max-w-[1400px] mx-auto relative z-10">
+          <motion.div initial="hidden" animate="visible" variants={fadeUp} className="max-w-4xl">
             
-            {/* Back Button */}
-            <div className="mb-10">
-              <Link href="/blogs" className="w-12 h-12 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors border border-white/10">
-                <ArrowLeft size={20} className="text-white" />
+            {/* ✨ NEW: Breadcrumbs & Back Button ✨ */}
+            <div className="flex items-center gap-4 mb-8">
+              <Link href="/blogs" className="w-10 h-10 shrink-0 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors border border-white/10">
+                <ArrowLeft size={18} className="text-white" />
               </Link>
+              <div className="flex items-center gap-2 text-[11px] md:text-[13px] font-medium tracking-widest uppercase text-white/60">
+                <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                <span>/</span>
+                <Link href="/blogs" className="hover:text-white transition-colors">Blogs</Link>
+                <span>/</span>
+                {/* Digawadi nam (mobile wala) auto truncate wenna max-w damma */}
+                <span className="text-white truncate max-w-[150px] md:max-w-[300px]">{blog.title}</span>
+              </div>
             </div>
 
-            {/* Meta Tags */}
+            {/* Category Tag */}
             <div className="flex items-center gap-3 mb-6">
               <span className="bg-white text-[#1a1a1a] text-[12px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">
                 {blog.category}
               </span>
             </div>
 
-            <h1 className="text-[40px] md:text-[60px] lg:text-[72px] font-medium leading-[1.1] text-white tracking-tight mb-8 max-w-4xl">
+            <h1 className="text-[40px] md:text-[60px] lg:text-[72px] font-medium leading-[1.1] text-white tracking-tight mb-8">
               {blog.title}
             </h1>
 
-            <div className="flex items-center gap-6 text-[14px] text-zinc-400 font-light">
+            {/* Meta Tags (Date & Read Time) */}
+            <div className="flex flex-wrap items-center gap-4 md:gap-6 text-[14px] text-zinc-400 font-light">
               <div className="flex items-center gap-2">
                 <Calendar size={16} />
                 <span>{blog.date}</span>
               </div>
-              <span className="w-1 h-1 rounded-full bg-zinc-600"></span>
+              <span className="hidden md:block w-1 h-1 rounded-full bg-zinc-600"></span>
               <div className="flex items-center gap-2">
                 <Clock size={16} />
                 <span>{blog.readTime}</span>

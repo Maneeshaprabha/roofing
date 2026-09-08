@@ -29,7 +29,7 @@ export default function Footer() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Link href="#" className="flex items-center gap-4 group">
+            <Link href="/contact" className="flex items-center gap-4 group">
               <span className="text-[18px] font-medium uppercase tracking-widest text-[#cc3333] group-hover:text-white transition-colors">
                 Start a project
               </span>

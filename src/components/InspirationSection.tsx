@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 // Placeholder images for the gallery
 const imagesSet1 = [
@@ -101,9 +102,9 @@ export default function InspirationSection() {
           Get inspired by our <br /> 1000+ project images
         </h3>
         
-        <button className="bg-[#cc3333] hover:bg-[#b82d29] text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105">
+        <Link href="/gallery" className="bg-[#cc3333] hover:bg-[#b82d29] text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 cursor-pointer">
           Explore Images
-        </button>
+        </Link>
       </div>
 
     </section>
