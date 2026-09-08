@@ -15,25 +15,25 @@ export default function Services() {
       id: "01",
       title: "Roofing Solutions",
       desc: "We provide high-quality roofing services using durable materials and skilled workmanship to ensure long-lasting protection, structural safety, and resistance to harsh weather conditions.",
-      img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=600"
+      img: "https://images.unsplash.com/photo-1617459973560-33aea09d1c22?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=600"
     },
     {
       id: "02",
       title: "Structural Steel",
       desc: "Expert fabrication and installation of structural steel frameworks for commercial and residential buildings, ensuring maximum load-bearing capacity and architectural integrity.",
-      img: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=600"
+      img: "https://images.unsplash.com/photo-1562088997-ed2fbeef1cd6?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=600"
     },
     {
       id: "03",
       title: "Rainwater Systems",
       desc: "Advanced guttering and rainwater harvesting system installations designed to efficiently manage heavy rainfall and protect your property from water damage.",
-      img: "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=600"
+      img: "https://img.magnific.com/free-photo/view-tank-container-water-storage_23-2151748314.jpg?t=st=1788892127~exp=1788895727~hmac=7999b009ba571f7ea34cc30c6cb297f6199de2dd1554be819dc6f67ba82a39c6&w=2000=80&w=600"
     },
     {
       id: "04",
       title: "Maintenance & Repair",
       desc: "Comprehensive roof inspection, maintenance, and emergency repair services to extend the lifespan of your engineering products and keep your building safe.",
-      img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600"
+      img: "https://images.unsplash.com/photo-1634750009079-6bf7bede038b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=600"
     }
   ];
 

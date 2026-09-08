@@ -1,8 +1,6 @@
 "use client";
 
 import CTASection from "@/src/components/CTASection";
-import Footer from "@/src/components/Footer";
-import Navbar from "@/src/components/Navbar";
 import { motion } from "framer-motion";
 import { CornerDownRight } from "lucide-react";
 import Link from "next/link";
@@ -10,9 +8,10 @@ import Link from "next/link";
 export default function ProjectsPage() {
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut"  as const } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } }
   };
 
+  // ✨ FIXED: Images replaced with the matching ones from the homepage ✨
   const projectsData = [
     {
       id: "01",
@@ -22,7 +21,7 @@ export default function ProjectsPage() {
       date: "August 15, 2025",
       desc: "Engineered and installed a heavy-duty structural steel framework, ensuring maximum load-bearing capacity and architectural stability for a large-scale commercial facility.",
       features: ["HEAVY STEEL FRAMEWORK", "LOAD-BEARING", "COMMERCIAL"],
-      img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=1200"
+      img: "https://images.unsplash.com/photo-1547895749-888a559fc2a7?q=80&w=764&auto=format&fit=crop"
     },
     {
       id: "02",
@@ -32,7 +31,7 @@ export default function ProjectsPage() {
       date: "September 22, 2025",
       desc: "Completed a comprehensive roof installation using premium zinc-aluminum sheets, delivering enhanced weather resistance, thermal efficiency, and striking modern aesthetics.",
       features: ["ZINC-ALUMINUM", "WEATHER RESISTANT", "RESIDENTIAL"],
-      img: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=1200"
+      img: "https://images.unsplash.com/photo-1668911494509-14baf3b42fda?q=80&w=1470&auto=format&fit=crop"
     },
     {
       id: "03",
@@ -42,7 +41,7 @@ export default function ProjectsPage() {
       date: "November 05, 2025",
       desc: "Designed and deployed a large-scale industrial rainwater harvesting and guttering system to efficiently manage heavy seasonal monsoons while promoting sustainability.",
       features: ["RAINWATER HARVESTING", "SEAMLESS GUTTERS", "ECO-FRIENDLY"],
-      img: "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=1200"
+      img: "https://img.magnific.com/free-photo/botanical-garden-with-plants_116348-61.jpg?t=st=1788892819~exp=1788896419~hmac=01bfb06d7783eb06057044c929040656bf7b2d79a87e8f6d01e21d7b992ad66c&w=1480"
     },
     {
       id: "04",
@@ -53,13 +52,32 @@ export default function ProjectsPage() {
       desc: "Executed critical roof restorations and structural reinforcements to extend the lifespan, safety, and historical integrity of a prominent commercial property.",
       features: ["STRUCTURAL RESTORATION", "HERITAGE UPKEEP", "SAFETY AUDIT"],
       img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200"
+    },
+    {
+      id: "05",
+      slug: "nexus-logistics-hub",
+      title: "Nexus Logistics Hub",
+      category: "Fabrication",
+      date: "March 30, 2026",
+      desc: "Fabricated and assembled custom steel purlins and cladding systems tailored to the exact structural requirements of the facility.",
+      features: ["CUSTOM FABRICATION", "STEEL CLADDING", "INDUSTRIAL"],
+      img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200"
+    },
+    {
+      id: "06",
+      slug: "alpine-retreat-residences",
+      title: "Alpine Retreat Residences",
+      category: "Custom Architecture",
+      date: "May 12, 2026",
+      desc: "Delivered high-end roofing and custom metal finishing, seamlessly blending robust engineering with modern aesthetic design.",
+      features: ["HIGH-END FINISHING", "CUSTOM METALS", "LUXURY DESIGN"],
+      img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200"
     }
   ];
 
   return (
     <div className="min-h-screen bg-white text-zinc-900 font-sans overflow-hidden">
   
-
       {/* 1. HERO SECTION */}
       <section className="relative bg-[#050505] pt-40 pb-24 md:pt-52 md:pb-32 px-6 md:px-16 lg:px-24 overflow-hidden rounded-b-[40px] md:rounded-b-[60px]">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-white blur-[150px] opacity-[0.03] rounded-full pointer-events-none"></div>
@@ -96,13 +114,13 @@ export default function ProjectsPage() {
         </motion.div>
 
         <div className="flex flex-col">
-          {projectsData.map((project) => (
+          {projectsData.map((project, index) => (
             <motion.div 
               key={project.id} 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8, delay: 0.1 }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
               className="flex flex-col lg:flex-row gap-12 lg:gap-20 py-16 md:py-20 border-b border-zinc-200 items-center lg:items-stretch"
             >
               
@@ -143,7 +161,6 @@ export default function ProjectsPage() {
                   ))}
                 </div>
 
-                {/* FIXED: Dynamic Link pointing to /projects/[slug] */}
                 <Link 
                   href={`/projects/${project.slug}`} 
                   className="flex items-center gap-3 border border-[#1a1a1a] rounded-full text-[#1a1a1a] px-7 py-3.5 w-max hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300"

@@ -13,10 +13,10 @@ const imagesSet1 = [
 ];
 
 const imagesSet2 = [
-  "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=600",
-  "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=600",
+  "https://img.magnific.com/free-photo/botanical-garden-with-plants_116348-61.jpg?t=st=1788892819~exp=1788896419~hmac=01bfb06d7783eb06057044c929040656bf7b2d79a87e8f6d01e21d7b992ad66c&w=1480=80&w=600",
+  "https://images.unsplash.com/photo-1668911494509-14baf3b42fda?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=600",
   "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600",
-  "https://images.unsplash.com/photo-1600607687920-4e2a09be1587?q=80&w=600",
+  "https://images.unsplash.com/photo-1547895749-888a559fc2a7?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=600",
 ];
 
 export default function InspirationSection() {

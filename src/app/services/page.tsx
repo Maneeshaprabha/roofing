@@ -1,8 +1,6 @@
 "use client";
 
 import CTASection from "@/src/components/CTASection";
-import Footer from "@/src/components/Footer";
-import Navbar from "@/src/components/Navbar";
 import { motion } from "framer-motion";
 import { CornerDownRight } from "lucide-react";
 import Link from "next/link";
@@ -10,17 +8,18 @@ import Link from "next/link";
 export default function ServicesPage() {
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const   } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } }
   };
 
+  // ✨ FIXED: Replaced with your exact images ✨
   const servicesData = [
     {
       id: "01",
-      slug: "roofing-solutions", // Link path eka
+      slug: "roofing-solutions", 
       title: "Roofing Solutions",
       desc: "High-quality roofing services using durable zinc-aluminum and stone-coated steel. We ensure long-lasting protection, structural safety, and resistance to harsh weather conditions for effortless everyday living.",
       features: ["LEAK-PROOF INSTALLATION", "THERMAL EFFICIENCY", "20-YEAR WARRANTY"],
-      img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=1200"
+      img: "https://images.unsplash.com/photo-1617459973560-33aea09d1c22?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=600"
     },
     {
       id: "02",
@@ -28,7 +27,7 @@ export default function ServicesPage() {
       title: "Structural Steel Design",
       desc: "We design thoughtful commercial and residential structural spaces that align with your safety goals. Expert fabrication and installation of steel frameworks ensuring maximum load-bearing capacity.",
       features: ["HEAVY-DUTY FRAMEWORKS", "CUSTOM FABRICATION", "SEISMIC RESISTANCE"],
-      img: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=1200"
+      img: "https://images.unsplash.com/photo-1562088997-ed2fbeef1cd6?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=600"
     },
     {
       id: "03",
@@ -36,7 +35,7 @@ export default function ServicesPage() {
       title: "Rainwater Harvesting",
       desc: "Advanced guttering and rainwater harvesting system installations designed to efficiently manage heavy rainfall and protect your property while promoting eco-friendly water management.",
       features: ["SEAMLESS GUTTERS", "HIGH-CAPACITY DRAINAGE", "ECO-FRIENDLY SYSTEM"],
-      img: "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=1200"
+      img: "https://img.magnific.com/free-photo/view-tank-container-water-storage_23-2151748314.jpg?t=st=1788892127~exp=1788895727~hmac=7999b009ba571f7ea34cc30c6cb297f6199de2dd1554be819dc6f67ba82a39c6&w=2000=80&w=600"
     },
     {
       id: "04",
@@ -44,7 +43,7 @@ export default function ServicesPage() {
       title: "Maintenance & Repair",
       desc: "Comprehensive roof inspection, maintenance, and emergency repair services to extend the lifespan of your engineering products and ensure continuous safety.",
       features: ["24/7 EMERGENCY SUPPORT", "DETAILED INSPECTIONS", "MATERIAL REPLACEMENTS"],
-      img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200"
+      img: "https://images.unsplash.com/photo-1634750009079-6bf7bede038b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=600"
     }
   ];
 
@@ -57,7 +56,6 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen bg-white text-zinc-900 font-sans overflow-hidden">
-     
 
       {/* 1. HERO SECTION */}
       <section className="relative bg-[#050505] pt-40 pb-24 md:pt-52 md:pb-32 px-6 md:px-16 lg:px-24 overflow-hidden rounded-b-[40px] md:rounded-b-[60px]">

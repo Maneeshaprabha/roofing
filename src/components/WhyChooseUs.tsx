@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { ChevronUp } from "lucide-react";
-import Image from "next/image";
 import { useState } from "react";
 
 // 100% Working Image Links
@@ -10,7 +9,7 @@ const slides = [
   {
     title: "Roofing Tiles",
     subtitle: "Premium quality for maximum durability.",
-       img: "https://images.unsplash.com/photo-1567420102570-c2c7781e88af?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=600"
+    img: "https://images.unsplash.com/photo-1567420102570-c2c7781e88af?q=80&w=1470&auto=format&fit=crop"
   },
   {
     title: "Steel Frameworks",
@@ -20,7 +19,7 @@ const slides = [
   {
     title: "Rainwater Gutters",
     subtitle: "Seamless systems for extreme weather.",
-    img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800"
+    img: "https://images.unsplash.com/photo-1654531015087-8cc3d04d1b2d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=800"
   }
 ];
 
@@ -29,15 +28,14 @@ export default function WhyChooseUs() {
 
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut"  as const} },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
   };
 
-  // Mouse/Touch drag karama slide wenna ooni paththa calculate karana function eka
   const handleDragEnd = (e: any, { offset }: any) => {
     if (offset.x < -50 && currentIndex < slides.length - 1) {
-      setCurrentIndex((prev) => prev + 1); // Scroll Right
+      setCurrentIndex((prev) => prev + 1);
     } else if (offset.x > 50 && currentIndex > 0) {
-      setCurrentIndex((prev) => prev - 1); // Scroll Left
+      setCurrentIndex((prev) => prev - 1);
     }
   };
 
@@ -69,7 +67,7 @@ export default function WhyChooseUs() {
           {/* Bottom Red Background */}
           <div className="absolute bottom-0 left-0 w-full h-[40%] bg-[#c23631] transition-transform duration-500 group-hover:h-[45%] pointer-events-none"></div>
           
-          {/* Slider Container (Draggable & Animated) */}
+          {/* Slider Container */}
           <motion.div 
             className="relative z-10 flex h-full cursor-grab active:cursor-grabbing"
             animate={{ x: `-${currentIndex * 100}%` }}
@@ -81,37 +79,35 @@ export default function WhyChooseUs() {
           >
             {slides.map((slide, idx) => (
               <div key={idx} className="w-full h-full shrink-0 flex flex-col p-8 lg:p-10 pb-16">
-                {/* Card Texts */}
+                
                 <h3 className="text-4xl lg:text-[40px] font-semibold text-[#1a1a1a] mb-2 tracking-tight">
                   {slide.title}
                 </h3>
                 <p className="text-gray-500 text-[15px] font-medium">
                   {slide.subtitle}
                 </p>
-                {/* Thin Red Line */}
                 <div className="h-[2px] w-20 bg-[#cc3333] mt-3"></div>
 
-                {/* Tile Image */}
-                <div className="flex-1 relative mt-8 flex items-center justify-center">
-                  <Image 
+                {/* ✨ REMOVED WHITE BORDER: Clean Framed Image Area ✨ */}
+                <div className="flex-1 relative mt-8 mb-4 w-full rounded-[20px] overflow-hidden shadow-2xl">
+                  <img 
                     src={slide.img} 
                     alt={slide.title} 
-                    fill 
-                    className="object-contain mix-blend-multiply drop-shadow-2xl hover:scale-105 transition-transform duration-500 pointer-events-none" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out pointer-events-none" 
                   />
                 </div>
               </div>
             ))}
           </motion.div>
 
-          {/* Pagination Dots (Clickable) */}
+          {/* Pagination Dots */}
           <div className="absolute z-20 bottom-8 left-0 right-0 flex justify-center gap-2">
             {slides.map((_, idx) => (
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
                 className={`h-1.5 rounded-full transition-all duration-300 ${
-                  currentIndex === idx ? "w-6 bg-black" : "w-1.5 bg-black/30 hover:bg-black/60"
+                  currentIndex === idx ? "w-6 bg-white" : "w-1.5 bg-white/40 hover:bg-white/80"
                 }`}
                 aria-label={`Go to slide ${idx + 1}`}
               ></button>
@@ -119,7 +115,7 @@ export default function WhyChooseUs() {
           </div>
         </motion.div>
 
-        {/* RIGHT COLUMN: Wide Card + Paragraph (No changes here) */}
+        {/* RIGHT COLUMN: Wide Card + Paragraph */}
         <motion.div 
           initial="hidden" 
           whileInView="visible" 
@@ -131,21 +127,23 @@ export default function WhyChooseUs() {
           <div className="relative h-[300px] w-full rounded-[32px] bg-[#e8e9eb] overflow-hidden flex items-center p-8 lg:p-12">
             
             {/* Text Side (Left half) */}
-            <div className="relative z-10 w-full md:w-3/5">
-              <h3 className="text-4xl lg:text-[42px] font-semibold text-[#1a1a1a] mb-2 tracking-tight">Modern Home Exterior</h3>
-              <p className="text-gray-500 text-[15px] font-medium">Weather-resistant and aesthetically pleasing.</p>
-              {/* Thick Red Line */}
-              <div className="h-[4px] w-40 bg-[#cc3333] mt-4"></div>
+            <div className="relative z-10 w-full md:w-1/2 pr-4">
+              <h3 className="text-4xl lg:text-[42px] font-semibold text-[#1a1a1a] mb-2 tracking-tight leading-tight">
+                Modern Home Exterior
+              </h3>
+              <p className="text-gray-500 text-[15px] font-medium mt-2">
+                Weather-resistant and aesthetically pleasing.
+              </p>
+              <div className="h-[4px] w-40 bg-[#cc3333] mt-5"></div>
             </div>
 
-            {/* Stacked Tiles Image (Right half) */}
-            <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[60%] h-[120%]">
-              {/* <Image
-                src="https://plus.unsplash.com/premium_photo-1736194028960-1c65f630137d?q=80&w=687&auto=format&fit=crop"
-                alt="Stacked Tiles" 
-                fill 
-                className="object-contain mix-blend-multiply drop-shadow-xl hover:scale-105 transition-transform duration-500" 
-              /> */}
+            {/* ✨ REMOVED WHITE BORDER: Properly Framed Image on the Right Side ✨ */}
+            <div className="absolute right-[-5%] lg:right-[5%] top-1/2 -translate-y-1/2 w-[55%] lg:w-[45%] h-[75%] rounded-[20px] overflow-hidden shadow-2xl">
+              <img 
+                src="https://plus.unsplash.com/premium_photo-1736194028960-1c65f630137d?q=80&w=687&auto=format&fit=crop" 
+                alt="Modern Exterior" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out" 
+              />
             </div>
           </div>
 
