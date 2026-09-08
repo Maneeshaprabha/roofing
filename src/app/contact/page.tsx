@@ -70,7 +70,7 @@ export default function ContactAboutPage() {
               A legacy built on precision, durability, and uncompromising quality.
             </h3>
             <p className="text-[16px] md:text-[18px] text-zinc-600 font-light leading-[1.7] mb-8">
-              Founded with a vision to revolutionize the structural and roofing landscape in Sri Lanka, Vinta Engineering has grown into a trusted partner for commercial, industrial, and premium residential developments. We believe that a structure is only as good as the materials and minds behind it.
+              Founded with a vision to revolutionize the structural and roofing landscape in Sri Lanka, Roofing Engineering has grown into a trusted partner for commercial, industrial, and premium residential developments. We believe that a structure is only as good as the materials and minds behind it.
             </p>
             <p className="text-[16px] md:text-[18px] text-zinc-600 font-light leading-[1.7] mb-12">
               From heavy-duty steel fabrication to advanced rainwater harvesting and roofing solutions, our approach is rooted in deep material science and modern architectural aesthetics. Every project we undertake is an opportunity to push the boundaries of what is possible.
@@ -243,8 +243,8 @@ export default function ContactAboutPage() {
 
             <motion.div variants={fadeUp} className="flex flex-col border-b border-zinc-200 pb-12 mb-12">
               <span className="text-[12px] font-semibold text-zinc-400 uppercase tracking-widest mb-6">02 — Direct Email</span>
-              <a href="mailto:hello@vintaengineering.com" className="text-[24px] md:text-[28px] font-medium text-[#1a1a1a] hover:text-[#cc3333] transition-colors inline-block w-max">
-                hello@vintaengineering.com
+              <a href="mailto:hello@Roofingengineering.com" className="text-[24px] md:text-[28px] font-medium text-[#1a1a1a] hover:text-[#cc3333] transition-colors inline-block w-max">
+                hello@Roofingengineering.com
               </a>
               <p className="text-[15px] text-zinc-500 font-light mt-4">
                 Our team typically replies within 24 hours.

@@ -215,8 +215,8 @@ export default function ServiceDetailsPage() {
                 </div>
                 <div className="flex items-center gap-4">
                   <Mail size={20} className="text-[#1a1a1a] shrink-0" strokeWidth={1.5} />
-                  <a href="mailto:hello@vintaengineering.com" className="text-[15px] md:text-[16px] text-zinc-600 font-light hover:text-[#cc3333] transition-colors">
-                    hello@vintaengineering.com
+                  <a href="mailto:hello@Roofingengineering.com" className="text-[15px] md:text-[16px] text-zinc-600 font-light hover:text-[#cc3333] transition-colors">
+                    hello@Roofingengineering.com
                   </a>
                 </div>
                 <div className="flex items-center gap-4">

@@ -16,7 +16,7 @@ export default function WorkWeveDone() {
     visible: { opacity: 1, transition: { staggerChildren: 0.15  } }
   };
 
-  // Real-world, professional content for Vinta Engineering
+  // Real-world, professional content for Roofing Engineering
   const projects = [
     {
       date: "August 15, 2025",

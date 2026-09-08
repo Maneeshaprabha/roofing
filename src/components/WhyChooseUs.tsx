@@ -10,7 +10,7 @@ const slides = [
   {
     title: "Roofing Tiles",
     subtitle: "Premium quality for maximum durability.",
-       img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600"
+       img: "https://images.unsplash.com/photo-1567420102570-c2c7781e88af?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=600"
   },
   {
     title: "Steel Frameworks",
@@ -152,7 +152,7 @@ export default function WhyChooseUs() {
           {/* Bottom Paragraph Text */}
           <div className="pr-4 lg:pr-10">
             <p className="text-gray-600 text-lg leading-[1.7] font-light">
-              Our roofing solutions are meticulously engineered to withstand severe weather conditions while providing superior structural integrity. Designed for both residential and commercial applications, Vinta roofing tiles offer an optimal balance of cost-effectiveness, aesthetic appeal, and long-lasting performance. We use premium-grade materials and advanced manufacturing techniques to ensure your roof remains strong and reliable for decades to come.
+              Our roofing solutions are meticulously engineered to withstand severe weather conditions while providing superior structural integrity. Designed for both residential and commercial applications, Roofing roofing tiles offer an optimal balance of cost-effectiveness, aesthetic appeal, and long-lasting performance. We use premium-grade materials and advanced manufacturing techniques to ensure your roof remains strong and reliable for decades to come.
             </p>
           </div>
 

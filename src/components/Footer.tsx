@@ -52,8 +52,8 @@ export default function Footer() {
               Haputale Road, <br />
               Welimada, Sri Lanka.
             </p>
-            <a href="mailto:hello@vintaengineering.com" className="text-[16px] text-white hover:text-[#cc3333] transition-colors mb-2 w-max">
-              hello@vintaengineering.com
+            <a href="mailto:hello@Roofingengineering.com" className="text-[16px] text-white hover:text-[#cc3333] transition-colors mb-2 w-max">
+              hello@Roofingengineering.com
             </a>
             <a href="tel:+94701234562" className="text-[16px] text-white hover:text-[#cc3333] transition-colors w-max">
               +94 70 123 4562
@@ -119,11 +119,11 @@ export default function Footer() {
         {/* Bottom Giant Brand Name */}
         <div className="w-full border-t border-white/10 pt-10 pb-4 flex flex-col md:flex-row justify-between items-center gap-6">
           <h1 className="text-[12vw] md:text-[8vw] font-bold leading-none tracking-tighter text-white">
-            VINTA.
+            ROOFING.
           </h1>
           
           <div className="flex flex-col items-center md:items-end text-[13px] text-gray-500 font-light gap-2">
-            <p>© {new Date().getFullYear()} Vinta Roofing.</p>
+            <p>© {new Date().getFullYear()} Roofing Roofing.</p>
             <p>
               Site by <Link href="https://netxium.com/" target="_blank" className="text-white hover:text-[#cc3333] transition-colors ml-1">Netxium</Link>
             </p>

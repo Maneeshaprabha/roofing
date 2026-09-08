@@ -17,7 +17,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import WorkingTogether from "../components/WorkingTogether";
 import WorkWeveDone from "../components/WorkWeveDone";
 
-export default function VintaHomepage() {
+export default function RoofingHomepage() {
   return (
     <div className="min-h-screen bg-white text-zinc-900 font-sans overflow-hidden">
    

@@ -38,7 +38,7 @@ export default function Testimonials() {
     {
       id: 4,
       image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=200",
-      review: "I've worked with many engineering firms, but Vinta stands out for their precision, structural integrity, and high-grade materials.",
+      review: "I've worked with many engineering firms, but Roofing stands out for their precision, structural integrity, and high-grade materials.",
       name: "S. Fernando",
       role: "Architect"
     },

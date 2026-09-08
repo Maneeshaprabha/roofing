@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vinta | Reliable Engineering & Technical Solutions",
+  title: "Roofing | Reliable Engineering & Technical Solutions",
   description:
     "We provide cost-effective engineering solutions without compromising on performance, quality, or reliability.",
 };

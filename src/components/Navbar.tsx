@@ -43,7 +43,7 @@ export default function Navbar() {
         {/* Left - Logo or Spacer */}
         <div className="flex-1">
           <Link href="/" className="text-white text-xl font-semibold tracking-wide">
-            VINTA.
+            ROOFING.
           </Link>
         </div>
         
@@ -101,7 +101,7 @@ export default function Navbar() {
             >
               {/* Header & Close Button */}
               <div className="flex items-center justify-between mb-12">
-                <span className="text-white font-semibold tracking-widest uppercase text-lg">Vinta.</span>
+                <span className="text-white font-semibold tracking-widest uppercase text-lg">Roofing.</span>
                 <button 
                   onClick={togglePanel} 
                   className="text-gray-400 hover:text-white transition-all bg-white/5 hover:bg-white/10 p-2 rounded-full"
@@ -151,7 +151,7 @@ export default function Navbar() {
                     </div>
                     <div>
                       <p className="text-[12px] text-gray-500 uppercase tracking-widest mb-1">Email</p>
-                      <a href="mailto:hello@vinta.com" className="text-gray-300 text-[15px] font-light hover:text-white transition-colors">hello@vinta.com</a>
+                      <a href="mailto:hello@Roofing.com" className="text-gray-300 text-[15px] font-light hover:text-white transition-colors">hello@Roofing.com</a>
                     </div>
                   </div>
 
