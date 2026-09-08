@@ -300,7 +300,7 @@ const productsData = [
     subCategory: "Sealants",
     desc: "High-elasticity waterproof sealant for joints, gutters, and roofing overlaps.",
     specs: "Durability: Weatherproof",
-    img: "https://images.unsplash.com/photo-1588698066547-83d47d0e82ec?q=80&w=800",
+    img: "https://img.magnific.com/free-vector/caulking-gun-metallic-bottle-with-construction-foam-sealing-adhesive-pu-foam_1441-1629.jpg?t=st=1788896441~exp=1788900041~hmac=3f78e3dd7d47f8674dff278827ab969c4ccb25c37e0452dc3e49f710e61b3d71&w=1480=80&w=800",
   },
 ];
 
