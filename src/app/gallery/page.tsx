@@ -1,34 +1,46 @@
 "use client";
 
 import CTASection from "@/src/components/CTASection";
-
 import { motion } from "framer-motion";
 import { Maximize2 } from "lucide-react";
 
 export default function GalleryPage() {
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const} }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } }
   };
 
-  // Pure Visual Gallery Data
+  const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.15 }
+    }
+  };
+
+  // 🚨 FIXED: Removed `y: 30` to fix the browser CSS columns bug 🚨
+  const itemVariant = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.8, ease: "easeOut" } }
+  };
+
+// Pure Visual Gallery Data (Updated Working Links)
   const galleryImages = [
-    { id: 1, title: "Industrial Warehouse Steel Framework", category: "Structural", src: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=1200" },
-    { id: 2, title: "Modern Residential Roofing", category: "Roofing", src: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=1200" },
-    { id: 3, title: "Commercial Rainwater System", category: "Drainage", src: "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=1200" },
+    { id: 1, title: "Industrial Warehouse Steel Framework", category: "Structural", src: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=1200" },
+    { id: 2, title: "Modern Residential Roofing", category: "Roofing", src: "https://images.unsplash.com/photo-1719887805632-de5be825f72b?q=80&w=1200&auto=format&fit=crop" },
+    { id: 3, title: "Commercial Rainwater System", category: "Drainage", src: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200" },
     { id: 4, title: "High-rise I-Beam Construction", category: "Structural", src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800" },
-    { id: 5, title: "Heritage Building Restoration", category: "Restoration", src: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800" },
+    { id: 5, title: "Heritage Building Restoration", category: "Restoration", src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800" },
     { id: 6, title: "Zinc-Alum Roof Installation", category: "Roofing", src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200" },
-    { id: 7, title: "Mezzanine Floor Boards", category: "Flooring", src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800" },
-    { id: 8, title: "Heavy Duty Factory Setup", category: "Industrial", src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200" },
-    { id: 9, title: "Automated Gate Framework", category: "Structures", src: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800" }
+    { id: 7, title: "Mezzanine Floor Boards", category: "Flooring", src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800" },
+    { id: 8, title: "Heavy Duty Factory Setup", category: "Industrial", src: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1200&q=80"},
+    { id: 9, title: "Automated Gate Framework", category: "Structures", src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800" }
   ];
 
   return (
     <div className="min-h-screen bg-white text-zinc-900 font-sans overflow-x-clip">
-  
 
-      {/* 1. HERO SECTION (Consistent with Products/Services) */}
+      {/* 1. HERO SECTION */}
       <section className="relative bg-[#050505] pt-40 pb-24 md:pt-52 md:pb-32 px-6 md:px-16 lg:px-24 rounded-b-[40px] md:rounded-b-[60px] overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-white blur-[150px] opacity-[0.03] rounded-full pointer-events-none"></div>
         <div className="max-w-[1400px] mx-auto relative z-10">
@@ -51,16 +63,17 @@ export default function GalleryPage() {
       {/* 2. MASONRY GALLERY SECTION */}
       <section className="py-20 md:py-32 px-6 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
         
-        {/* Gallery Grid */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 md:gap-8 space-y-6 md:space-y-8">
-          {galleryImages.map((image, index) => (
+        <motion.div 
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
+          className="columns-1 md:columns-2 lg:columns-3 gap-6 md:gap-8"
+        >
+          {galleryImages.map((image) => (
             <motion.div 
               key={image.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="relative rounded-[24px] overflow-hidden group cursor-pointer break-inside-avoid bg-zinc-100"
+              variants={itemVariant}
+              className="relative rounded-[24px] overflow-hidden group cursor-pointer break-inside-avoid inline-block w-full mb-6 md:mb-8 bg-zinc-100"
             >
               {/* Image */}
               <img 
@@ -87,7 +100,7 @@ export default function GalleryPage() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
 
       </section>
 
