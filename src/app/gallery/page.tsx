@@ -21,7 +21,7 @@ export default function GalleryPage() {
   // 🚨 FIXED: Removed `y: 30` to fix the browser CSS columns bug 🚨
   const itemVariant = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.8, ease: "easeOut" } }
+    visible: { opacity: 1, transition: { duration: 0.8, ease: "easeOut" as const } }
   };
 
 // Pure Visual Gallery Data (Updated Working Links)

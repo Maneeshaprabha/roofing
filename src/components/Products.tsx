@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function Products() {
   const [currentPage, setCurrentPage] = useState(0);
 
-  // 🚨 18 WENAS PRODUCTS (Vinta Catalog) 🚨
+  // s 18 WENAS PRODUCTS (Vinta Catalog) 
   const productsList = [
     // Page 1 (0 to 5)
     { id: 1, title: "Clay Roofing Tiles", desc: "Classic aesthetic with excellent thermal insulation.", img: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=600" },
