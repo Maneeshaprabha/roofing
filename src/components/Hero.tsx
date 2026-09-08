@@ -10,7 +10,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image 
-          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000" 
+          src="/assets/Home.webp"
           alt="Roofing Background" 
           fill 
           className="object-cover" 

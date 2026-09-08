@@ -5,22 +5,22 @@ import { ChevronUp } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
-// Slider eke penwanne monawada kiyala data array ekak hadamu
+// 100% Working Image Links
 const slides = [
   {
     title: "Roofing Tiles",
     subtitle: "Premium quality for maximum durability.",
-    img: "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=600"
+       img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600"
   },
   {
     title: "Steel Frameworks",
     subtitle: "Heavy-duty structural steel solutions.",
-    img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600"
+    img: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=800"
   },
   {
     title: "Rainwater Gutters",
     subtitle: "Seamless systems for extreme weather.",
-    img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600"
+    img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800"
   }
 ];
 
@@ -140,7 +140,7 @@ export default function WhyChooseUs() {
 
             {/* Stacked Tiles Image (Right half) */}
             <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[60%] h-[120%]">
-              <Image 
+              <Image
                 src="https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=600" 
                 alt="Stacked Tiles" 
                 fill 
