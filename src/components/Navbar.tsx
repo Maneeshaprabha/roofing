@@ -55,7 +55,7 @@ export default function Navbar() {
               <Link 
                 key={link.name} 
                 href={link.href} 
-                className={`transition-colors duration-300 ${isActive ? "text-white" : "text-gray-400 hover:text-white"}`}
+                className={`transition-colors duration-300 ${isActive ? "text-white" : "text-white/60 hover:text-white"}`}
               >
                 {link.name}
               </Link>
@@ -67,7 +67,7 @@ export default function Navbar() {
         <div className="flex-1 flex justify-end items-center gap-6">
           <button 
             onClick={togglePanel}
-            className="text-gray-300 hover:text-white transition-colors flex items-center gap-3 group cursor-pointer"
+            className="text-white/60 hover:text-white transition-colors flex items-center gap-3 group cursor-pointer"
           >
             <span className="hidden md:block text-[13px] font-medium tracking-widest uppercase group-hover:text-white transition-colors">
               Contact
