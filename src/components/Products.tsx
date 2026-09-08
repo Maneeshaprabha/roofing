@@ -15,8 +15,8 @@ export default function Products() {
     { id: 2, title: "Zinc Aluminum Sheets", desc: "High-durability, rust-proof weather resistance.", img: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?q=80&w=600" },
     { id: 3, title: "Stone Coated Steel", desc: "Lightweight, fire-resistant, and long-lasting.", img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600" },
     { id: 4, title: "Concrete Roof Tiles", desc: "Heavy-duty structural integrity for severe weather.", img: "https://images.unsplash.com/photo-1617461785897-2d7bb0f047c4?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=600" },
-    { id: 5, title: "Asphalt Shingles", desc: "Flexible, waterproof, and highly cost-effective.", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600" },
-    { id: 6, title: "Polycarbonate Panels", desc: "UV-protected transparent sheets for natural lighting.", img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600" },
+    { id: 5, title: "Asphalt Shingles", desc: "Flexible, waterproof, and highly cost-effective.", img: "https://img.magnific.com/premium-photo/brown-shingle-roof-with-wood-trim_1179475-39977.jpg?w=2000=80&w=600" },
+    { id: 6, title: "Polycarbonate Panels", desc: "UV-protected transparent sheets for natural lighting.", img: "https://img.magnific.com/free-photo/business-building-interior-with-plants_1127-2173.jpg?t=st=1788894190~exp=1788897790~hmac=703965cf7141a34ada746db9b4f31cbdef1d051d2b8d47b242706d904fbd20c2&w=2000=80&w=600" },
 
     // Page 2 (6 to 11)
     { id: 7, title: "Heavy-Duty I-Beams", desc: "Hot-rolled structural steel for massive load bearing.", img: "https://images.unsplash.com/photo-1671022442106-c787685d9fed?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dq=80&w=600" },

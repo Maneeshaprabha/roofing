@@ -56,7 +56,7 @@ const productsData = [
     subCategory: "",
     desc: "Classic aesthetic with excellent thermal insulation.",
     specs: "Durability: 50+ Years",
-    img: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=800",
+    img: "https://images.unsplash.com/photo-1628774942553-bd4b553e7457?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=800",
   },
   {
     id: 2,
@@ -76,7 +76,7 @@ const productsData = [
     subCategory: "Stone-Coated",
     desc: "Combines the strength of steel with natural stone chips. Excellent sound insulation.",
     specs: "Warranty: 25 Years",
-    img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800",
+    img: "https://images.unsplash.com/photo-1589562733209-fab72552a40b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=800",
   },
   {
     id: 4,
@@ -86,7 +86,7 @@ const productsData = [
     subCategory: "",
     desc: "Heavy-duty structural integrity engineered for severe weather.",
     specs: "Weight: Heavy Profile",
-    img: "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=800",
+    img: "https://img.magnific.com/free-photo/photo-wood-texture-pattern_58702-13174.jpg?t=st=1788893883~exp=1788897483~hmac=2de3cc02b389df9bb317c4824e1dae2277585470d5408e74bc34e4f1d64f394c&w=1480=80&w=800",
   },
   {
     id: 5,
@@ -96,7 +96,7 @@ const productsData = [
     subCategory: "",
     desc: "Flexible, waterproof, and highly cost-effective roofing solutions.",
     specs: "Finish: Textured",
-    img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800",
+    img: "https://img.magnific.com/premium-photo/brown-shingle-roof-with-wood-trim_1179475-39977.jpg?w=2000=80&w=800",
   },
   {
     id: 6,
@@ -106,7 +106,7 @@ const productsData = [
     subCategory: "Polycarbonate",
     desc: "High-transparency corrugated panels allowing natural daylight.",
     specs: "Light Transmission: 90%",
-    img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800",
+    img: "https://img.magnific.com/free-photo/business-building-interior-with-plants_1127-2173.jpg?t=st=1788894190~exp=1788897790~hmac=703965cf7141a34ada746db9b4f31cbdef1d051d2b8d47b242706d904fbd20c2&w=2000=80&w=800",
   },
   {
     id: 7,

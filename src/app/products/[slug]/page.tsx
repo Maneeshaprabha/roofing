@@ -140,7 +140,7 @@ const productsContent: Record<string, {
     title: "Polycarbonate Skylight Sheets",
     category: "Accessories",
     heroDesc: "High-transparency corrugated polycarbonate panels allowing natural daylight into industrial warehouses while blocking UV rays.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000",
+    image: "https://img.magnific.com/free-photo/business-building-interior-with-plants_1127-2173.jpg?t=st=1788894190~exp=1788897790~hmac=703965cf7141a34ada746db9b4f31cbdef1d051d2b8d47b242706d904fbd20c2&w=2000https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000",
     overview: "Polycarbonate skylight sheets provide brilliant natural illumination for industrial and commercial buildings, slashing daytime electricity costs. Coated with a protective UV layer, they prevent yellowing and brittle degradation under intense sunlight.",
     features: [
       "Up to 90% light transmission with soft diffusion.",
