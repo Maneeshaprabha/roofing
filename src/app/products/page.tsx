@@ -202,7 +202,7 @@ const productsData = [
     subCategory: "Wood Panels",
     desc: "Premium interior wooden slats designed for sound absorption and modern aesthetics.",
     specs: "Material: Oak Veneer",
-    img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800",
+    img: "https://img.magnific.com/free-photo/gray-sofa-living-room-with-copy-space_43614-926.jpg?t=st=1788923508~exp=1788927108~hmac=d525802408c50e14ec2d57d86d763759458b0594c4e2c70569c417fa78245748&w=1480=80&w=800",
   },
   {
     id: 16,
@@ -212,7 +212,7 @@ const productsData = [
     subCategory: "Gypsum Boards",
     desc: "Fire-resistant and smooth finishing interior boards for seamless ceilings.",
     specs: "Thickness: 9mm - 12mm",
-    img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800",
+    img: "https://img.magnific.com/free-photo/plasterboard-installers-men-assembling-drywall-false-ceiling-simple-affordable-renovation-premises_166373-1909.jpg?t=st=1788923625~exp=1788927225~hmac=17f28797f71855dd1eb8fc7583ed10d5509ac3e95053ed846f5f0d5679255af7&w=2000=80&w=800",
   },
   {
     id: 17,
@@ -222,7 +222,7 @@ const productsData = [
     subCategory: "Suspended Ceilings",
     desc: "Aluminium T-grid systems paired with acoustic mineral fiber tiles for offices.",
     specs: "Tile Size: 600x600mm",
-    img: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=800",
+    img: "https://img.magnific.com/free-photo/vertical-low-angle-shot-metal-ceiling-concrete-building_181624-7530.jpg?t=st=1788923681~exp=1788927281~hmac=739c7a779998e7d74dfec463f4bf51ecb62803c968e3f6ea0b63310e8f3613b5&w=2000=80&w=800",
   },
 
   // --- WALL SYSTEMS & FLOOR BOARDS ---
@@ -234,7 +234,7 @@ const productsData = [
     subCategory: "",
     desc: "Durable and weather-resistant wall systems for commercial facades.",
     specs: "Thickness: 0.50mm",
-    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800",
+    img: "https://img.magnific.com/free-photo/beautiful-building-exterior-design_23-2151917337.jpg?t=st=1788923764~exp=1788927364~hmac=6ab7c09b83039ccd5340e207e53977726af92a4c85679b73c495c19b21ac7d3e&w=2000=80&w=800",
   },
   {
     id: 19,
@@ -256,7 +256,7 @@ const productsData = [
     subCategory: "",
     desc: "Heavy-duty structural gates equipped with high-torque motorized systems.",
     specs: "Power: 1200W Motor",
-    img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+    img: "https://img.magnific.com/free-photo/exterior-modern-residential-building_637285-1921.jpg?t=st=1788923836~exp=1788927436~hmac=f3d1d89f873ec988c75326d093cdf7863509ac7257f64fa89dd26e021399a00e&w=1060=80&w=800",
   },
 
   // --- PAINTS & PUTTY ---
@@ -278,7 +278,7 @@ const productsData = [
     subCategory: "Wall Putty",
     desc: "White cement-based putty that provides a silky smooth base for painting.",
     specs: "Type: Acrylic / Cement",
-    img: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?q=80&w=800",
+    img: "https://plus.unsplash.com/premium_photo-1681589433879-c823909b13be?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80&w=800",
   },
 
   // --- ACCESSORIES ---
