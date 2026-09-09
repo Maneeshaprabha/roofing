@@ -5,6 +5,13 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
+  const navLinks =[
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "Projects", href: "/projects" },
+    { name: "Products", href: "/products" },
+    { name: "Blogs", href: "/blogs" },
+  ];
   return (
     // Pure Black Background - No gradients, no glows. Just clean contrast.
     <footer className="bg-black pt-32 pb-10 font-sans text-white border-t border-white/10">
@@ -66,13 +73,13 @@ export default function Footer() {
               Navigation
             </p>
             <ul className="flex flex-col gap-4 text-[16px] text-gray-300 font-light">
-              {["Home", "Services", "Projects", "About", "Contact"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="hover:text-white hover:translate-x-2 transition-transform duration-300 inline-block">
-                    {item}
+              {navLinks.map((link) => (
+                <li key={link.name}>
+                  <Link href={link.href} className="hover:text-white hover:translate-x-2 transition-transform duration-300 inline-block">
+                    {link.name}
                   </Link>
                 </li>
-              ))}
+              ))} 
             </ul>
           </div>
 
