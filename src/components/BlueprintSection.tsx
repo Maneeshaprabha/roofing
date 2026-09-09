@@ -20,7 +20,7 @@ export default function BlueprintSection() {
         >
           <Image 
             // METANA OYAGE ACTUAL WIREFRAME IMAGE PATH EKA DANNA (e.g., "/blueprint.png")
-            src="/assets/blueprint.webp" 
+            src="/assets/blueprint1.webp" 
             alt="Layered roofing sheets blueprint" 
             fill 
             className="object-contain opacity-80 mix-blend-lighten" // mix-blend eken kalu background kapila yanawa

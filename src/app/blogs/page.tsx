@@ -23,7 +23,7 @@ export default function BlogsPage() {
       date: "September 02, 2026",
       excerpt: "An in-depth look at how modern hot-rolled steel frameworks are being engineered to resist high humidity, saline environments, and extreme monsoons in South Asia.",
       readTime: "6 Min Read",
-      img: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=2000",
+      img: "https://img.magnific.com/free-photo/interior-airport-with-windows_116348-70.jpg?t=st=1788919114~exp=1788922714~hmac=cbb96d81d59c007d4a865523cf505fd5c408e5cf8483d0ebc983e0a08f498f2d&w=2000=80&w=2000",
       featured: true
     },
     {
@@ -34,7 +34,7 @@ export default function BlogsPage() {
       date: "August 28, 2026",
       excerpt: "Comparing the thermal efficiency, corrosion resistance, and structural dead-load benefits of AZ150 coated sheets against standard clay tiles.",
       readTime: "4 Min Read",
-      img: "https://images.unsplash.com/photo-1504307651254-35680f356f78?q=80&w=1000"
+      img: "https://img.magnific.com/free-photo/high-angle-beautiful-wooden-house-with-new-roof_23-2149343703.jpg?t=st=1788919199~exp=1788922799~hmac=51a7cde91d232296c9435c8c31ee02ed5c55c4275d5fe99cedb2c67df2330d0e&w=2000=80&w=1000"
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ export default function BlogsPage() {
       date: "August 15, 2026",
       excerpt: "How implementing high-capacity seamless guttering and underground reservoirs can save large-scale factories thousands in utility costs.",
       readTime: "5 Min Read",
-      img: "https://images.unsplash.com/photo-1620245451921-1632731804f8?q=80&w=1000"
+      img: "https://img.magnific.com/free-photo/cinematic-style-mall_23-2151551280.jpg?t=st=1788919339~exp=1788922939~hmac=3cf54541516c3ba468f2e6266f653040df99602fa0f631a060e09d4bdf41fc38&w=2000=80&w=1000"
     },
     {
       id: 4,
@@ -54,7 +54,7 @@ export default function BlogsPage() {
       date: "July 30, 2026",
       excerpt: "Don't wait until the next monsoon. Learn how to identify early signs of structural sagging, fastener corrosion, and hidden leaks.",
       readTime: "4 Min Read",
-      img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1000"
+      img: "https://img.magnific.com/free-photo/vertical-low-angle-shot-ceiling-cool-house-with-modern-minimalistic-interior_181624-6635.jpg?t=st=1788919444~exp=1788923044~hmac=5f5a0d73be40b382c184b11dff3777bea6d0c2480d9a7047d479d4f4933addb9&w=2000=80&w=1000"
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ export default function BlogsPage() {
       date: "July 12, 2026",
       excerpt: "A breakdown of how wind shear, dead loads, and live loads dictate the selection between C-Purlins and heavy-duty I-Beams.",
       readTime: "7 Min Read",
-      img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000"
+      img: "https://img.magnific.com/free-photo/warehouse-workers-discussing-about-logistics-distribution-packages-market_342744-1558.jpg?t=st=1788919576~exp=1788923176~hmac=1abaf4058e71a94830b9f0e4b17e185bd8900e1133900538f78aa9be6427210f&w=1480=80&w=1000"
     },
     {
       id: 6,

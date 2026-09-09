@@ -4,7 +4,23 @@ import { motion } from "framer-motion";
 import { ChevronUp } from "lucide-react";
 
 export default function WorkingTogether() {
-  const partners = ["NESCAFÉ", "NESCAFÉ", "NESCAFÉ", "NESCAFÉ", "NESCAFÉ", "NESCAFÉ", "NESCAFÉ"];
+  const partners = ["NESCAFÉ", "Northbridge",
+  "Brighton Works",
+  "Redwood Studio",
+  "Crown & Co",
+  "Westfield",
+  "Blue Finch",
+  "Harbor & Lane",
+  "Limehouse",
+  "Everton Digital",
+  "Willow & Co",
+  "Briar Group",
+  "Kingsley",
+  "Rosewood",
+  "Greenwich Labs",
+  "Ashford & Co",
+  "Hampton Works",
+  "Silver Oak", ];
 
   return (
     <section className="py-24 w-full bg-white font-sans overflow-hidden">
